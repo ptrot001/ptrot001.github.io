@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>gabarit-transactionnel</title>
+
+    <script type="module" src="https://accesdc-static.mouv.desjardins.com/oel-stencil-gabarits/1.0.0/oel-stencil-gabarits.esm.js" />
+    <script nomodule src="https://accesdc-static.mouv.desjardins.com/oel-stencil-gabarits/1.0.0/oel-stencil-gabarits.js" />
+
+    <!-- doit être inclus dans la page pour les appels à la font dans le shadow dom-->
+    <link rel="stylesheet" href="//www.desjardins.com/ressources/css/roboto-aw.css?v=001" />
+
+
+    <link href="https://static.mouv.desjardins.com/fw/N3/1.17.0/lib/externe/bootstrap/3.4.0/css/bootstrap.min.css"
+    rel="stylesheet" type="text/css" />
+  <link href="https://static.mouv.desjardins.com/fw/N3/1.17.0/lib/interne/fwd-bootstrap/3.3/css/d2-0.min.css"
+    rel="stylesheet" type="text/css" />
+  </head>
+  <body class="isolation-bootstrap-3 d2-0">
+    <div id="zone-entete-de-page">
+      <div id="entete">
+        <oel-header-transactionnel
+          type-container="n3-fluid"
+          version-theme="n3-d2-0"
+          comportement-bouton-retour="afficher-modale-annulation">
+        </oel-header-transactionnel>
+      </div>
+  </div>
+  <main role="main">
+    <div class="row container-fluid">
+      <div class="col-xs-24">
+        Particularités de l'entete :
+        <ul>
+          <li>type-container="n3-fluid"</li>
+          <li>version-theme="n3-d2-0"</li>
+        </ul>
+        <br>
+        <button class="btn btn-primary">Bouton N3</button>
+      </div>
+    </div>
+
+  </main>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <!--
+      Les paramètres disponibles pour le footer:
+      - type-container
+      - version-theme
+      - custom-max-width-container
+      - custom-padding-container
+      - langue
+    -->
+
+    <oel-footer-transactionnel
+      type-container="n3-fluid"
+      version-theme="n3-d2-0">
+  </oel-footer-transactionnel>
+
+  <script src="https://static.mouv.desjardins.com/static-adpm/202001291732/placement/libs/jquery/jquery-1.11.3.min.js"></script>
+  <script
+    src="https://static.mouv.desjardins.com/fw/N3/1.17.0/lib/externe/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!--
+  <script src="https://static.mouv.desjardins.com/fw/N3/1.17.0/lib/externe/jquery/2.2.4/jquery.min.js"></script>
+    <script
+    src="https://static.mouv.desjardins.com/fw/N3/1.17.0/lib/interne/fwd-bootstrap/3.3/js/fwd-bootstrap.min.js"></script>
+-->
+  </body>
+</html>

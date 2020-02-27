@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>gabarit-transactionnel</title>
+    <script type="module" src="/build/oel-stencil-gabarits.esm.js"></script>
+    <script nomodule src="/build/oel-stencil-gabarits.js"></script>
+
+
+    <!-- doit être inclus dans la page pour les appels à la font dans le shadow dom-->
+    <link rel="stylesheet" href="//www.desjardins.com/ressources/css/roboto-aw.css?v=001" />
+
+
+    <link href="https://static.mouv.desjardins.com/static-adpm/0.0/lib/externe/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <link href="https://static.mouv.desjardins.com/fw/N3/1.10.7/lib/interne/fwd-bootstrap/3.3/css/fwd-bootstrap.css" rel="stylesheet">
+
+  </head>
+  <body class="isolation-bootstrap-3">
+    <script src="https://static.mouv.desjardins.com/static-adpm/202001291732/placement/libs/jquery/jquery-1.11.3.min.js"></script>
+
+    <div id="zone-entete-de-page">
+      <div id="entete">
+        <oel-header-transactionnel
+          type-container="n3-fluid"
+          version-theme="n3-flat"
+          comportement-bouton-retour="afficher-modale-annulation">
+        </oel-header-transactionnel>
+      </div>
+  </div>
+
+  <div>
+    Particularités de l'entete :
+    <ul>
+      <li>type-container="n3-fluid"</li>
+      <li>version-theme="n3-flat"</li>
+    </ul>
+    <br>
+    <button class="btn btn-primary">Bouton N3 non isolé</button>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <!--
+      Les paramètres disponibles pour le footer:
+      - type-container
+      - version-theme
+      - custom-max-width-container
+      - custom-padding-container
+      - langue
+    -->
+
+    <oel-footer-transactionnel
+      type-container="n3-fluid"
+      version-theme="n3-flat">
+  </oel-footer-transactionnel>
+
+    <script src="https://static.mouv.desjardins.com/static-adpm/0.0/lib/externe/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://static.mouv.desjardins.com/static-adpm/0.0/lib/interne/fwd-bootstrap/3.3/js/fwd-bootstrap.min.js" type="text/javascript"></script>
+
+  </body>
+</html>
